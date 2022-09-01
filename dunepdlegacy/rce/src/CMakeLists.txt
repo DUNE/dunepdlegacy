@@ -1,8 +1,0 @@
-# depends on no libraries
-
-# look for dunepdlegacy/dam
-
-include_directories(${CMAKE_CURRENT_SOURCE_DIR}/..)
-
-art_make_library( LIBRARY_NAME dunepdlegacy_rce_dataaccess )
-
