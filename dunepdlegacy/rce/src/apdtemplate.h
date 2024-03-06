@@ -192,7 +192,6 @@ extern unsigned int apd_decode (APD_dtx             *dtx,
     lo = scale_lo (lo, range, table[symbol  ]);
 
     APD_dumpStatement (int value_save = value;)
-    int nbits      = 0;
     while (1)
     {
         /* Loop to get rid of bits. */
@@ -232,7 +231,6 @@ extern unsigned int apd_decode (APD_dtx             *dtx,
         lo &= APC_M_CV_ALL;
         hi &= APC_M_CV_ALL;
 
-        nbits += 1;
         /* Move in next input bit.  */
         add_input_bit(value, in, buffer, bits_to_go);
     }

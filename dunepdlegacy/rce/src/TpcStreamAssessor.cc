@@ -53,7 +53,7 @@
 #include "TpcToc-Impl.hh"
 #include "TpcPacket-Impl.hh"
 
-#include <dam/access/WibFrame.hh>
+#include <dunepdlegacy/rce/dam/access/WibFrame.hh>
 
 #include <cstdint>
 #include <stdio.h>

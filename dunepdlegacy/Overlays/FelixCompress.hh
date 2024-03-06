@@ -47,7 +47,8 @@ struct HuffTree {
         hasParent = other.hasParent;
       }
     }
-
+    ~Node() {};
+    
     // Operator< overloading for ordering by frequency. If the frequency is the
     // same, the values in the nodes are taken into account.
     bool operator<(const Node& other) const {
@@ -350,16 +351,17 @@ class FelixCompressor {
 
     // Insert the frequency table into Huffman tree nodes and calculate the
     // information entropy according to Shannon.
+    // trj -- but since it's not printed out, clang complains.  Commenting it out.
     std::vector<HuffTree::Node> nodes;
-    double entropy = 0;
-    const unsigned num_vals = num_frames * frame_()->num_ch_per_frame;
+    //double entropy = 0;
+    //const unsigned num_vals = num_frames * frame_()->num_ch_per_frame;
     for (auto p : freq_table) {
       HuffTree::Node curr_node;
       curr_node.value = p.first;
       curr_node.frequency = p.second;
       nodes.push_back(curr_node);
 
-      entropy += (double)p.second / num_vals * log((double)num_vals / p.second);
+      //entropy += (double)p.second / num_vals * log((double)num_vals / p.second);
     }
     // std::cout << "ADC value entropy: " << entropy << " bits.\n";
 

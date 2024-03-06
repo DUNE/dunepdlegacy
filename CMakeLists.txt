@@ -10,7 +10,11 @@
 # use cmake 3.19 or later
 cmake_minimum_required (VERSION 3.19)
 
+<<<<<<< HEAD
 project(dunepdlegacy VERSION 1.00.03 LANGUAGES CXX)
+=======
+project(dunepdlegacy VERSION 1.01.01 LANGUAGES CXX)
+>>>>>>> v1_01_01
 
 # cetbuildtools contains our cmake modules
 find_package(cetbuildtools REQUIRED)

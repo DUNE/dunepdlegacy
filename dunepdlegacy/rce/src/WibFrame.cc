@@ -1046,7 +1046,7 @@ static void transposeAdcs128xN_kernel (int16_t *const       *dst,
       // -----------------------------
       // Decode into a local Adc buffer
       // ----------------------------- 
-      int16_t                adcBuf[128];
+      int16_t                adcBuf[128] = {0};
       expandAdcs64x1_kernel (adcBuf+ 0, src0);
       expandAdcs64x1_kernel (adcBuf+64, src1);
 

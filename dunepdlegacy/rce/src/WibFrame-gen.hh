@@ -819,9 +819,6 @@ static void transposeAdcs16x4_kernel (uint64_t *const *dst64,
    uint64_t const *src2 = src1 + sizeof (WibFrame) / sizeof (*src2);
    uint64_t const *src3 = src2 + sizeof (WibFrame) / sizeof (*src3);
 
-   uint64_t dst;
-
-
    // Get the set of adcs channels 0-3 for the first 4 timeslices
    uint64_t w0_0 = *src0++;
    uint64_t w1_0 = *src1++;
@@ -876,19 +873,11 @@ static void transposeAdcs16x4_kernel (uint64_t *const *dst64,
    
 
    // Channel 8
-   dst    = D8 (w0_1)       << 0 * 16;
-   dst   |= D8 (w1_1)       << 1 * 16;
-   dst   |= D8 (w2_1)       << 2 * 16;
-   dst   |= D8 (w3_1)       << 3 * 16;
    dst64[8][offset] = transpose8 (w0_1, w1_1, w2_1, w3_1);
    print (dst64, 8, offset);
 
    
    // Channel 9
-   dst    = D9 (w0_1)       << 0 * 16;
-   dst   |= D9 (w1_1)       << 1 * 16;
-   dst   |= D9 (w2_1)       << 2 * 16;
-   dst   |= D9 (w3_1)       << 3 * 16;
    dst64[9][offset] = transpose9 (w0_1, w1_1, w2_1, w3_1);
    print (dst64, 9, offset);
 

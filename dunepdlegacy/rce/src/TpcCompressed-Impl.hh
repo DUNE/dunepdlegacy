@@ -51,7 +51,7 @@
 \* ---------------------------------------------------------------------- */
 
 
-#include  "dam/access/TpcCompressed.hh"
+#include  "dunepdlegacy/rce/dam/access/TpcCompressed.hh"
 #include "dunepdlegacy/rce/dam/records/TpcCompressed.hh"
 
 
