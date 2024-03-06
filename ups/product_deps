@@ -25,7 +25,7 @@ table_fragment_end
 
 #
 product         version         optional
-artdaq_core     v3_10_00
+artdaq_core     v3_10_01
 art             v3_12_01
 cetbuildtools   v8_20_00        -          only_for_build
 gallery		v1_20_03
