@@ -37,7 +37,7 @@ find_package(Boost REQUIRED COMPONENTS system) # Needs to be first to cover for 
 find_package( artdaq_core REQUIRED )
 find_package( art REQUIRED )
 find_package( cetlib REQUIRED )
-find_package( gallery REQUIRED )
+find_package( gallery REQUIRED EXPORT )
 find_package( messagefacility REQUIRED )
 
 # have to make sure cmake doesn't select the system libraries
