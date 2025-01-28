@@ -20,4 +20,4 @@ CONDITIONS OF ANY KIND, either express or implied. See the License for
 the specific language governing permissions and limitations under the
 License.
 
-(*) Portions of the software contained in this repositor are copyright by the Board of Trustees of the Leland Stanford Junior University, through SLAC National Accelerator Laboratory.
+(*) Portions of the software contained in this repository are copyright by the Board of Trustees of the Leland Stanford Junior University, through SLAC National Accelerator Laboratory.
