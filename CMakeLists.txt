@@ -12,7 +12,7 @@ cmake_minimum_required (VERSION 3.20 FATAL_ERROR)
 # cmake_policy(VERSION 3.19)
 
 find_package(cetmodules REQUIRED)
-project(dunepdlegacy VERSION 1.01.05 LANGUAGES CXX)
+project(dunepdlegacy VERSION 1.02.00 LANGUAGES CXX)
 set(dunepdlegacy_FW_DIR "files")
 
 # cetbuildtools contains our cmake modules
